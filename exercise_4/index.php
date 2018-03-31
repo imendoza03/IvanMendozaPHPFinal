@@ -4,19 +4,16 @@ require_once 'Cat.php';
 use exercise_4\Cat;
 
 //Instantiation of object Cat
-$cat_1 = new Cat();
-$cat_1->setFirstName('Carlos')->setAge(11)->setSex('male')->setRace('angora')->setColor('black');
-
+//Fisrt cat
+$cat_1 = new Cat('Carlos', 11, 'black', 'male', 'angora');
 $cat_1_details = $cat_1->getInfo();
 
-$cat_2 = new Cat();
-$cat_2->setFirstName('Marta')->setAge(5)->setSex('female')->setRace('chinese')->setColor('yellow');
-
+//Second cat
+$cat_2 = new Cat('Marta', 5, 'yellow', 'female', 'chinese');
 $cat_2_details = $cat_2->getInfo();
 
-$cat_3 = new Cat();
-$cat_3->setFirstName('Pedro')->setAge(7)->setSex('male')->setRace('dominican')->setColor('red');
-
+//Third cat
+$cat_3 = new Cat('Pedro', 5, 'green', 'male', 'american');
 $cat_3_details = $cat_3->getInfo();
 ?>
 

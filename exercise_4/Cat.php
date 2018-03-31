@@ -9,6 +9,14 @@ class Cat
     private $sex;
     private $race;
     
+    public function  __construct($firstName, $age, $color, $sex, $race) {
+        $this->setFirstName($firstName);
+        $this->setAge($age);
+        $this->setColor($color);
+        $this->setSex($sex);
+        $this->setRace($race);
+    }
+    
     /**
      * @return mixed
      */
