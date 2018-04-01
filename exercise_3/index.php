@@ -1,8 +1,6 @@
 <?php 
 //POST request
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
-//     var_dump($_POST);
-//     die;
     $make = $_POST['make'] ?? null;
     $model = $_POST['model'] ?? null;
     $year = $_POST['year'] ?? null;
