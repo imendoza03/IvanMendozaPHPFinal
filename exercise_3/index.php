@@ -51,7 +51,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 				url: '/index.php',
 				data: {'make':'bmw'},
 			}).done(function(data, textStatus, jqXHR){
-				console.log(data);
+				$("html").append(data);
 			}).fail(function(data){
 				console.log(data);
 			});
