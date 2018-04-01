@@ -16,9 +16,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         //array containing the car
         $car[] = [$make, $model, $year, $colour];
         
-        return 'Car sucessfully created !';
+        $result = json_encode(['response' => 'Car sucessfully created !']);
+        echo $result;
     }
     
-    return 'Car could not be created !';
+    $result = json_encode(['response' => 'Car could not be created !']);
+    echo $result;
 }
 ?>
